@@ -1,0 +1,35 @@
+Algoritmo "Orcamento da Cantina"
+
+Const
+   VALOR_REFEICAO = 12.50
+   VALOR_CAFE = 4.00
+
+Var
+   refeicoes, cafes: inteiro
+   disponivel: real
+   gastoRefeicoes, gastoCafes: real
+   gastoTotal, saldo: real
+
+Inicio
+
+   Escreva("Quantidade de refeicoes: ")
+   Leia(refeicoes)
+
+   Escreva("Quantidade de cafes: ")
+   Leia(cafes)
+
+   Escreva("Valor disponivel no cartao: ")
+   Leia(disponivel)
+
+   gastoRefeicoes <- refeicoes * VALOR_REFEICAO
+   gastoCafes <- cafes * VALOR_CAFE
+   gastoTotal <- gastoRefeicoes + gastoCafes
+   saldo <- disponivel - gastoTotal
+
+   Escreval()
+   Escreval("Gasto refeicoes: ", gastoRefeicoes:0:2)
+   Escreval("Gasto cafes: ", gastoCafes:0:2)
+   Escreval("Gasto total: ", gastoTotal:0:2)
+   Escreval("Saldo restante: ", saldo:0:2)
+
+FimAlgoritmo
